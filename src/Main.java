@@ -1,9 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello there  and welcome!");
+        String originalText = "Hello, World!";
+        int shift = 4;
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
-        }
+        String encryptedText = Enkriptimi.encrypt(originalText, shift);
+
+        System.out.println("Original Text: " + originalText);
+        System.out.println("Encrypted Text: " + encryptedText);
     }
 }
