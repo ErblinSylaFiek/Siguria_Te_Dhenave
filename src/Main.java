@@ -5,7 +5,9 @@ public class Main {
 
         String encryptedText = Enkriptimi.encrypt(originalText, shift);
 
+
         System.out.println("Original Text: " + originalText);
         System.out.println("Encrypted Text: " + encryptedText);
+
     }
 }
