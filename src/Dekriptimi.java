@@ -5,7 +5,9 @@ public class Dekriptimi {
         for(char ch: text.toCharArray()){
             if(Character.isLetter(ch)){
                 char base = Character.isUpperCase(ch)? 'A' : 'a';
-                result.appennd((chat) ((ch-base-shift+26) %26 + base));
+                result.append((char) ((ch-base-shift+26) %26 + base));
+            }else{
+                result.append(ch);
             }
         }
     }
