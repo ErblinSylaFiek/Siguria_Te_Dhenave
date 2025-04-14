@@ -8,5 +8,6 @@ public class Dekriptimi {
                 result.appennd((chat) ((ch-base-shift+26) %26 + base));
             }
         }
-    }
+        return result.toString();
+       }
 }
