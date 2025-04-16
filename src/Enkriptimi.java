@@ -1,6 +1,10 @@
 
 public class Enkriptimi {
     public static String encrypt(String text, int shift) {
+        if(shift < 0 || shift > 25) {
+            //
+        }
+
         StringBuilder result = new StringBuilder();
 
         for (char ch : text.toCharArray()) {
