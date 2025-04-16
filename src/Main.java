@@ -4,7 +4,7 @@ public class Main {
         int shift = 4;
 
         String encryptedText = Enkriptimi.encrypt(originalText, shift);
-
+        String decryptedText=Dekriptimi.decrypt(encryptedText,shift);
 
         System.out.println("Original Text: " + originalText);
         System.out.println("Encrypted Text: " + encryptedText);
