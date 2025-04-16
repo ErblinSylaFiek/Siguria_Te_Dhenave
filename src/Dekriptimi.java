@@ -13,9 +13,13 @@ public class Dekriptimi {
         return result.toString();
     }
 
-       //Metode shtese: brute force decrypt
+    //Metode shtese: brute force decrypt
     public static void bruteForceDecrypt(String text){
-
+        System.out.println();
+        System.out.println("Rezultatet e mundshme për çdo shift:");
+        for (int shift = 1; shift < 26; shift++) {
+            String decrypted = decrypt(text, shift);
+            System.out.println("Shift " + shift + ": " + decrypted);
+        }
     }
-
 }
