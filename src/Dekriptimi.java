@@ -1,5 +1,9 @@
 public class Dekriptimi {
     public static String decrypt(String text, int shift){
+        if (shift < 0 || shift > 25) {
+            throw new IllegalArgumentException("Vlera e shift duhet të jetë midis 0 dhe 25.");
+        }
+
         StringBuilder result = new StringBuilder();
 
         for(char ch: text.toCharArray()){
