@@ -11,5 +11,11 @@ public class Dekriptimi {
             }
         }
         return result.toString();
-       }
+    }
+
+       //Metode shtese: brute force decrypt
+    public static void bruteForceDecrypt(String text){
+
+    }
+
 }
