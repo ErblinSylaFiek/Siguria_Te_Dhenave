@@ -9,5 +9,6 @@ public class Main {
         System.out.println("Original Text: " + originalText);
         System.out.println("Encrypted Text: " + encryptedText);
         System.out.println("Decrypted Text: " + decryptedText);
+        Dekriptimi.bruteForceDecrypt(encryptedText);
     }
 }
