@@ -1,3 +1,5 @@
 public class Testimi {
-    //test
+    public static void main(String[] args){
+
+    }
 }
