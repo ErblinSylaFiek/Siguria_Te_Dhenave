@@ -15,5 +15,14 @@ public class Testimi {
         } else {
             System.out.println("Testi deshtoi, simbolet jane ndryshu!");
         }
+
+        System.out.println("\n-----------------------------\n");
+
+        // Testimi 2: Me shkronja te medha/te vogla + hapesira
+        String fjaliCase = "Pershendetje Une Jam Ereza Greicevci!";
+        int shift2 = 3;
+
+        String enkriptuarCase = Enkriptimi.encrypt(fjaliCase, shift2);
+        String dekriptuarCase = Dekriptimi.decrypt(enkriptuarCase, shift2);
     }
 }
