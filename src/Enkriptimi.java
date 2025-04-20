@@ -1,4 +1,5 @@
 public class Enkriptimi {
+    // Metoda qe enkripton tekstin duke perdorur Caesar cipher me nje vlere te caktuar te shift-it
     public static String encrypt(String text, int shift) {
         if (shift < 0 || shift > 25) {
             throw new IllegalArgumentException("Vlera e shift duhet të jetë midis 0 dhe 25.");

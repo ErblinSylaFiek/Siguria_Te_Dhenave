@@ -1,5 +1,6 @@
 public class Testimi {
     public static void main(String[] args){
+        // Testimi 1: Me simbole
         String fjaliMeSimbole = "Pershendetje123.Une jam Erblin Syla@#";
         int shift = 5;
 
@@ -34,5 +35,26 @@ public class Testimi {
         } else {
             System.out.println("Testimi per shkronja & case deshtoi.");
         }
+
+        System.out.println("\n-----------------------------\n");
+
+        // Testimi 3: Testimi per vlere jo valide te shift
+
+        try{
+            String  testimi3 = "Pershendetje Une Jam Erik Behrami!";
+            int shift3 = 27;
+
+            String enkriptimiTestimi3 = Enkriptimi.encrypt(testimi3, shift3);
+            String dekriptimiTestimi3 = Dekriptimi.decrypt(testimi3, shift3);
+
+            System.out.println("Teksti origjinal: " + testimi3);
+            System.out.println("Teksti i enkriptuar me shift " + shift3 + ": " + enkriptimiTestimi3);
+            System.out.println("Teksti i dekriptuar: " + dekriptimiTestimi3);
+        }catch (Exception e){
+            System.out.println(e.getMessage());
+        }
     }
 }
+
+
+
