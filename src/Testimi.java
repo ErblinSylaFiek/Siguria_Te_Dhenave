@@ -1,5 +1,6 @@
 public class Testimi {
     public static void main(String[] args){
+        // Testimi 1: Me simbole
         String fjaliMeSimbole = "Pershendetje123.Une jam Erblin Syla@#";
         int shift = 5;
 
