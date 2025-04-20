@@ -24,5 +24,15 @@ public class Testimi {
 
         String enkriptuarCase = Enkriptimi.encrypt(fjaliCase, shift2);
         String dekriptuarCase = Dekriptimi.decrypt(enkriptuarCase, shift2);
+
+        System.out.println("Teksti origjinal: " + fjaliCase);
+        System.out.println("Teksti i enkriptuar me shift " + shift2 + ": " + enkriptuarCase);
+        System.out.println("Teksti i dekriptuar: " + dekriptuarCase);
+
+        if (fjaliCase.equals(dekriptuarCase)) {
+            System.out.println("Testimi per shkronja & case kaloi me sukses!");
+        } else {
+            System.out.println("Testimi per shkronja & case deshtoi.");
+        }
     }
 }
