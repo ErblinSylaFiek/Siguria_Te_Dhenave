@@ -40,9 +40,14 @@ public class Main {
                     System.out.print("Shkruaj vlerën e shift (0–25): ");
                     int shiftD = scanner.nextInt();
 
+                    long startTime = System.nanoTime();
                     String decrypted = Dekriptimi.decrypt(tekstDekriptim, shiftD);
+                    long endTime = System.nanoTime();
+
+                    long duration = (endTime - startTime);
                     System.out.println();
                     System.out.println("Teksti i dekriptuar: " + decrypted);
+                    System.out.println("Koha e dekriptimit: " + duration + " nanosekonda.");
                     break;
 
                 case 3:
