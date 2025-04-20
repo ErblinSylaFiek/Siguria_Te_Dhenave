@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center" id="top">
   <img src="upLogo.png" width="150"/>
 </div>
 
@@ -82,3 +82,5 @@ git clone https://github.com/ErblinSylaFiek/Siguria_Te_Dhenave
 
 ## 📜 Licensa
 Ky projekt është nën licensën [MIT](LICENSE).
+
+<a href="#top" style="text-decoration: underline">Shko në fillim ↑</a>
